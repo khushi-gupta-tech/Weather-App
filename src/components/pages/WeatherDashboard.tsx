@@ -10,6 +10,7 @@ import {
 } from "@/hooks/useweather";
 import CurrentWeather from "./CurrentWeather";
 import HourlyTemperature from "./HourlyTemperature";
+import {WeatherDetails} from "./WeatherDetails";
 
 const WeatherDashboard = () => {
   const {
@@ -114,7 +115,7 @@ const WeatherDashboard = () => {
           <HourlyTemperature data={forecastQuery.data}/>
         </div>
         <div>
-          details
+          <WeatherDetails data={weatherQuery.data}/> 
           forecast
         </div>
       </div>
